@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="shortcut icon" type="x-icon" href="Icon.png">
     <link rel="stylesheet" href="style.css">
-    <title>HTML Video Player</title>
-  </head>
-  <body>
+</head>
+<body> 
     <div class="navbar">
         <div class="container">
-            <a class="home" hrel="index.html">S&S<span>Ino.</span><span>Tutoring</span></a>
+            <a class="home" hrel="index.html">S&S<span>Ino.</span><span>Tutoring</span><img src="Icon.png" class="icon"></a>
                 <img id="tut" class="tut-menu" src="menu.svg" alt="Open Navigation">
             <nav>
-            <img id="tutoring" class="tut-menu-exit" src="menu.svg" alt="Close Navigation">
+            <img id="tutoring" src="menu.svg" alt="Close Navigation">
             <ul class="first-nav">
                 <li class="current"><a href="index.html">Home Page</a></li>
-                <li class="sign"><a href="sign.html">Sign up</a></li>
                 <li><a class="contact" href="contact.html">Contact us</a></li>
                 <li><a class="privacy" href="privacy.html">Privacy Policy</a></li>
                 <li><a class="blog" href="blog.html">Blog</a></li>
@@ -26,40 +25,19 @@
            </nav>
         </div>
     </div>
-
-  
-
-    <div class="video-player">
-      <video
-        src="y2mate.com - The Robot Revolution The New Age of Manufacturing  Moving Upstream_1080p.mp4"
-        class="video" autoplay controls
-      ></video>
-
-      <div class="player-controls">
-        <div class="video-progress">
-          <div class="video-progress-filled"></div>
-        </div>
-
-        
-      </div>
+    <div class="iframe-c">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1KMIAUD1gOI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <script>
-    
-      const mobileBtn = document.getElementById('mobile-cta')
-            nav = document.querySelector('nav')
-            mobileBtnExit = document.getElementById('mobile-exit');
-  
-      mobileBtn.addEventListener('click', () => {
-          nav.classList.add('menu-btn');
-      })
-  
-      mobileBtnExit.addEventListener('click', () => {
-          nav.classList.remove('menu-btn');
-      })
-  
-  
-  
-  </script>  
-   
-  </body>
+        const tutoring = document.querySelector('#tut');
+        nav = document.querySelector('nav');
+        tutoringE = document.querySelector('#tutoring');
+        tutoring.addEventListener('click',()=>{
+            nav.classList.add('menu-btn');
+        })
+        tutoringE.addEventListener('click',()=>{
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
 </html>
