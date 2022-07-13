@@ -15,6 +15,11 @@ body {
   width: 100%;
 }
 
+.privacy{
+    justify-content: center;
+    background: #dfd8d8;
+}
+
 .navbar {
   background: #F2F2f2;
   padding: 1em;
@@ -121,24 +126,16 @@ nav li a:hover {
   text-align:center;
 }
 h1{
-    color:#7ea7b0;
+  color:#7ea7b0;
   font-size :3rem;
   font-weight: 700;
   letter-spacing:8px;
   margin-bottom:1rem;
+  text-align: center;
 }
 
 p{
-    font-size: 25px;
-    color:rgb(225, 227, 219);
-    height:20px solid #fff;
-    padding: 20PX;
-    margin: 20px auto;
-    max-width: 700px;
-    margin-bottom: 20px;
-    background-color: #1d2936;
-    border-top:5px solid forestgreen;
-    border-bottom:5px solid forestgreen;
+    text-align: center;
   }
   h2{
       font-size: 2px;
@@ -146,7 +143,18 @@ p{
       font-size: 4rem;
       font-weight: 400;
     }
+
+   h4{
+    text-align: center;
+   }
   
+   .list{
+    text-align: center;
+   }
+   ol{
+    display: inline-block;
+    text-align: left;
+   }
   @media only screen and (min-width: 768px) {
     .tut-menu, .tut-menu-exit {
       display: none;
@@ -188,6 +196,26 @@ p{
     }
     .navbar nav li.current a {
       font-weight: bold;
+    }
+  }
+  @media only screen and (min-width: 1450px) {
+    .features-section:before {
+      content: '';
+      position: absolute;
+      width: 10%;
+      height: 20em;
+      background: var(--primary-color);
+      left: 0;
+      top: -4em;
+    }
+    .features-section:after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 20em;
+      background: url("../images/dots.svg") no-repeat;
+      left: 4.5em;
+      top: 2em;
     }
   }
   
