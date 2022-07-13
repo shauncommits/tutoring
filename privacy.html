@@ -17,7 +17,6 @@
             <img id="tutoring" src="menu.svg" alt="Close Navigation">
             <ul class="first-nav">
                 <li class="current"><a href="index.html">Home Page</a></li>
-                <li class="sign"><a href="sign.html">Sign up</a></li>
                 <li><a class="contact" href="contact.html">Contact us</a></li>
                 <li><a class="privacy" href="privacy.html">Privacy Policy</a></li>
                 <li><a class="blog" href="blog.html">Blog</a></li>
@@ -26,5 +25,61 @@
            </nav>
         </div>
     </div>
+    <section class="privacy">
+        <h1>Privacy Statement</h1>
+        <h4>Introduction</h4>
+        <p>S&S Ino. Tutoring is commited to protect the privacy of our site users; this policy details the collection, use and protection of personal information we receive from the site visitors. S&S Ino. Tutoring is cpmmited to protecting any data that we collect concerning our customers and site visitors. By entering our website and using our services, you consent to our use of cookies as pertaining to the terms of this policy.</p>
+        <h4>Data collection</h4>
+        <p>While using our website, we may ask you to provide us with information that can be used to contact or identify you. S&S Ino. Tutoring collects the minimum amount of personal identifiable information necessary to improve our site and the service we provide. We may automatically collect, store and use the following kinds of personal information: your computer and visit to this site, information you provide when registering with our site or subscribing t our notifications</p>
+        <h4>Data use</h4>
+        <p>Personal information collected through our site will be used specifically for the purposes detailed in this policy. We may use your personal information to: 
+           <div class="list">
+            <ol>
+                <li>Enable your use of our site services</li>
+                <li>Customize our website for you</li>
+                <li>Prevent fraud and keep our site secure</li>
+                <li>Verify compliance with the Terms of Use of our site.</li>
+            </ol>
+           </div>
+        </p>
+        <h4>Data Disclosure</h4>
+        <p>We may disclose your personal information only for the reasons set out in this policy. We may disclose your personal information:
+            <div class="list">
+            <ol>
+                <li>When required to do so by law</li>
+                <li>2To exercise or defend our legal rights</li>
+            </ol> 
+            </div>
+            </p>
+        <h4>Data Retention</h4>
+        <p>Our data retention procedures are designed to ensure that we comply with our legal obligations relating to the storage and deletion of personal information. Personal information that we process for any reasons won’t be kept longer than is necessary for those purposes. We will keep documents containing personal data:
+            <div class="list">
+            <ol>
+                <li>When required to do so by law; and</li>
+                <li>To exercise or defend our legal rights.</li>
+            </ol>
+            </div>
+            </p>
+        <h4>Data Security</h4>
+        <p>The transmission of information over the internet is never 100% secure. We will take reasonable measures to prevent the loss or misuse of your personal information (e.g. SSL Certificates).
+            </p>
+        <h4>Amendments</h4>
+        <p>We may amend or update this policy periodically by publishing a new version on our site. We will notify you of changes made to this policy.
+            </p>
+        <h4>Cookies</h4>
+        <p>We may store cookies on your web browser when you visit pages of our site. If you block cookies, you may not be able to use all the features of our website.
+            </p>
+    </section>
+    <script>
+        const tutoring = document.querySelector('#tut');
+        nav = document.querySelector('nav');
+        tutoringE = document.querySelector('tutoring');
+        tutoring.addEventListener('click',()=>{
+            nav.classList.add('menu-btn');
+        })
+        tutoringE.addEventListener('click',()=>{
+            nav.classList.remove('menu-btn');
+        })
+    </script>
 </body>
 </html>
