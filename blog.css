@@ -3,6 +3,7 @@
   --primary-color: #7f98b2;
 }
 
+
 body {
   background-color: transparent;
   background: #F2F2F2;
@@ -15,6 +16,70 @@ body {
   width: 100%;
 }
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.contain{
+  width:100%;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+
+}
+.contain .head{
+width:85%;
+margin:auto;
+
+}
+.content-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.content-section .art{
+  flex:1;
+  margin:40px 20px;
+}
+.content-section .art img{
+  width:100%;
+  height: auto;
+}
+.content-section .art h4{
+ margin-top:20px;
+}
+.content-section .art p{
+  font-size: 15px;
+  color:#3d3d3d;
+  line-height: 1.5;
+  margin-top:10px;
+ }
+.heading-section{
+  width:60%;
+  text-align:center;
+  margin:auto;
+
+}
+
+.contain .head .heading-section h1{
+ padding-top: 30px;
+ font-size: 42px;
+
+}
+.contain .head .heading-section span{
+color:#ff0000;
+ 
+ }
+.contain .head .heading-section p{
+ margin-top: 15px;
+ color:#3d3d3d;
+ font-size: 17px;
+ line-height: 1.5rem;
+ 
+ }
+/* 
+ */
 .navbar {
   background: #F2F2f2;
   padding: 1em;
@@ -113,32 +178,24 @@ nav li a:hover {
  height: auto;
 }
 
-.detail{
-  max-width: 1100px;
-  margin:0 auto;
-  padding:0 3rem;
-  margin-top:5rem;
-  text-align:center;
-}
+
 h1{
-    color:#7ea7b0;
+color:#7ea7b0;
   font-size :3rem;
   font-weight: 700;
   letter-spacing:8px;
   margin-bottom:1rem;
 }
 
+
 p{
-    font-size: 25px;
+    font-size: 30px;
     color:rgb(225, 227, 219);
     height:20px solid #fff;
     padding: 20PX;
     margin: 20px auto;
     max-width: 700px;
     margin-bottom: 20px;
-    background-color: #1d2936;
-    border-top:5px solid forestgreen;
-    border-bottom:5px solid forestgreen;
   }
   h2{
       font-size: 2px;
@@ -146,6 +203,12 @@ p{
       font-size: 4rem;
       font-weight: 400;
     }
+  h4{
+      font-size: 2px;
+      color:rgb(16, 118, 18);
+      font-size: 2rem;
+      font-weight: 200;
+  }
   
   @media only screen and (min-width: 768px) {
     .tut-menu, .tut-menu-exit {
@@ -188,6 +251,26 @@ p{
     }
     .navbar nav li.current a {
       font-weight: bold;
+    }
+  }
+  @media only screen and (min-width: 1450px) {
+    .features-section:before {
+      content: '';
+      position: absolute;
+      width: 10%;
+      height: 20em;
+      background: var(--primary-color);
+      left: 0;
+      top: -4em;
+    }
+    .features-section:after {
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 20em;
+      background: url("../images/dots.svg") no-repeat;
+      left: 4.5em;
+      top: 2em;
     }
   }
   
