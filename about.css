@@ -122,7 +122,7 @@ nav li a:hover {
 }
 h1{
     color:#7ea7b0;
-  font-size :3rem;
+  /* font-size :3rem; */
   font-weight: 700;
   letter-spacing:8px;
   margin-bottom:1rem;
@@ -194,8 +194,8 @@ p{
   max-width: 700px;
   margin-bottom: 20px;
   background-color: #1d2936;
-  border-top:5px solid forestgreen;
-  border-bottom:5px solid forestgreen;
+  border-top:2px solid forestgreen;
+  border-bottom:2px solid forestgreen;
 }
 h2{
     font-size: 2px;
@@ -258,10 +258,3 @@ body {
   background-color: #d7f7ff;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
-
-
