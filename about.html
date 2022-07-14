@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="shortcut icon" type="x-icon" href="Icon.png">
+    <link rel="shortcut icon" type="x-icon" href="images/Icon.png">
     <link rel="stylesheet" href="about.css">
 </head>
 <body> 
     <div class="navbar">
         <div class="container">
-            <a class="home" hrel="index.html">S&S<span>Ino.</span><span>Tutoring</span><img src="Icon.png" class="icon"></a>
+            <a class="home" hrel="index.html">S&S<span>Ino.</span><span>Tutoring</span><img src="images/Icon.png" class="icon"></a>
                 <img id="tut" class="tut-menu" src="menu.svg" alt="Open Navigation">
             <nav>
-            <img id="tutoring" src="menu.svg" alt="Close Navigation">
+            <img id="tutoring" class="tut-menu-exit" src="exit.svg" alt="Close Navigation">
             <ul class="first-nav">
-                <li class="current"><a href="index.html">Home Page</a></li>
-                <li><a class="contact" href="contact.html">Contact us</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a class="contact" href="contact.html">Contact</a></li>
                 <li><a class="privacy" href="privacy.html">Privacy Policy</a></li>
                 <li><a class="blog" href="blog.html">Blog</a></li>
-                <li class="About"><a href="about.html">About us</a></li>
+                <li class="About"><a href="about.html">About Us</a></li>
             </ul>
            </nav>
         </div>
@@ -33,25 +33,21 @@
         <h2>Sotfware Developer</h2>
         <h2>Data Scientist</h2>
         <div class="image">
-            <img src="My_Pic.jpg" alt="mypicture">
+            <img src="images/Icon.png" alt="mypicture">
         </div>
+        <p>My name is Shaun Mbolompo, I am doing my second year in BSc. Computer Science and Business Computing at the University of Cape Town. I enjoy spending
+            most of my time coding and discovering latest trends. I spend my leisure time equiping others of the importance of education and dedicate most 
+            of my free time sharing the knowledge and skills I acquired in my journey of schooling by tutoring others.
+        </p>
     </div>
-    <div>
-        <div>
-            <div>
+    <div style="padding-bottom: 7%; background:#dfd8d8; background-size:20px; align-items: center; padding-left: 43%;">
+    <a href="contact.html" class="btn" style="font-size:30px"><strong>GET IN TOUCH</strong></a>
+   </div>
 
-            </div>
-        </div>
-    </div>
-<p>My name is Shaun Mbolompo, I am doing my second year in BSc. Computer Science and Business Computing at the University of Cape Town. I enjoy spending
-    most of my time coding and discovering latest trends. I spend my leisure time equiping others of the importance of education and dedicate most 
-    of my free time sharing the knowledge and skills I acquired in my journey of schooling by tutoring others.
-</p>
-<a href="#" class="btn">Get In Touch</a>
     <script>
             const tutoring = document.querySelector('#tut');
             nav = document.querySelector('nav');
-            tutoringE = document.querySelector('tutoring');
+            tutoringE = document.querySelector('#tutoring');
             tutoring.addEventListener('click',()=>{
                 nav.classList.add('menu-btn');
             })

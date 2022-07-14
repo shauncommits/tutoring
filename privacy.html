@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="shortcut icon" type="x-icon" href="Icon.png">
+    <title>Privacy</title>
+    <link rel="shortcut icon" type="x-icon" href="images/Icon.png">
     <link rel="stylesheet" href="privacy.css">
 </head>
 <body> 
     <div class="navbar">
         <div class="container">
-            <a class="home" hrel="index.html">S&S<span>Ino.</span><span>Tutoring</span><img src="Icon.png" class="icon"></a>
+            <a class="home" hrel="index.html">S&S<span>Ino.</span><span>Tutoring</span><img src="images/Icon.png" class="icon"></a>
                 <img id="tut" class="tut-menu" src="menu.svg" alt="Open Navigation">
             <nav>
-            <img id="tutoring" src="menu.svg" alt="Close Navigation">
+            <img id="tutoring" class="tut-menu-exit" src="exit.svg" alt="Close Navigation">
             <ul class="first-nav">
-                <li class="current"><a href="index.html">Home Page</a></li>
-                <li><a class="contact" href="contact.html">Contact us</a></li>
-                <li><a class="privacy" href="privacy.html">Privacy Policy</a></li>
-                <li><a class="blog" href="blog.html">Blog</a></li>
-                <li class="About"><a href="about.html">About us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
             </ul>
            </nav>
         </div>
@@ -73,7 +73,7 @@
     <script>
         const tutoring = document.querySelector('#tut');
         nav = document.querySelector('nav');
-        tutoringE = document.querySelector('tutoring');
+        tutoringE = document.querySelector('#tutoring');
         tutoring.addEventListener('click',()=>{
             nav.classList.add('menu-btn');
         })
