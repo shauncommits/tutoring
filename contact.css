@@ -148,6 +148,40 @@ nav li a:hover {
   margin: .5em;
   cursor: pointer;
 }
+section.features-section {
+  border-color:#20272E;
+  border-radius: 2;
+  background-color: transparent;
+  background: #f2f2f2;
+  color: #20272E;
+}
+ul.features-list {
+  margin: 0;
+  padding-top: 5%;
+  padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+ul.features-list li:before {
+  content: '';
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(bullet.svg);
+  background-size: contain;
+  margin-right: .5em;
+}
 
 
 @media only screen and (min-width: 768px) {
