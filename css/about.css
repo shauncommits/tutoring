@@ -217,6 +217,7 @@ h2{
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+    margin-left: 12.3%;
   }
   .navbar nav {
     display: -webkit-box;

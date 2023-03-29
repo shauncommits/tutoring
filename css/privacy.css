@@ -1,7 +1,7 @@
  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
   --primary-color: #7f98b2;
-}
+} 
 
 body {
   background-color: transparent;
@@ -152,6 +152,7 @@ nav li a:hover {
       -webkit-box-pack: unset;
           -ms-flex-pack: unset;
               justify-content: unset;
+      margin-left: 12.3%;
     }
     .navbar nav {
       display: -webkit-box;
@@ -181,7 +182,7 @@ nav li a:hover {
     }
     .navbar nav li.privacy a {
       font-weight: bold;
-      background: #F2F2f2;
+      /* background: #F2F2f2; */
 
     }
   }
@@ -198,8 +199,15 @@ nav li a:hover {
       width: 30%;
       margin-right: 8em;
     }
+    .first {
+      margin-right: 1em;
+    }
 
-
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   body{
     background-color: #d7f7ff;
